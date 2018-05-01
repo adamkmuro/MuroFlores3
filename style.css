@@ -151,6 +151,16 @@ select {
   transform: rotate(45deg);
 }
 
+.law{
+  display: none;
+
+  /* OTHER STYLES HERE */
+}
+
+.law.active{
+  display: block;
+}
+
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
