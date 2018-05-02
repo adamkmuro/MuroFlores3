@@ -162,8 +162,8 @@ select {
 }
 
 .law{
-      max-width: 50%;
-      padding: 1px;
+      width: 100%;
+      margin: 0 auto;
       float: left;
       min-height: 185px;
 
