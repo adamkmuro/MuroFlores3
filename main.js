@@ -14,7 +14,6 @@ $(document).ready(function(){
       //  $(".item.active").removeClass("active");
       //$("." + filter).addClass("active");
   });
-
   $("[type='checkbox']").on("click", function(e){
     console.log("FIRE! (movie theater is empty)");
     $(".law").removeClass("active");

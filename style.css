@@ -161,6 +161,11 @@ select {
   display: block;
 }
 
+.law{
+  margin: 0 auto;
+  max-width: 50%;
+
+}
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
