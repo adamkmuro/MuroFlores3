@@ -162,8 +162,13 @@ select {
 }
 
 .law{
-  margin: 0 auto;
-  max-width: 50%;
+      max-width: 50%;
+      padding: 1px;
+      float: left;
+      min-height: 185px;
+
+      display: none;
+  }
 
 }
 /* Tablet/Desktop overrides */
