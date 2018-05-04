@@ -21,6 +21,7 @@ html, body {
   /* background-color: #D3D3D3; */
   overflow-x: hidden;
   height: 100%;
+  background-color: #f2f2f2;
 }
 
 .hero-image {
@@ -51,14 +52,22 @@ html, body {
 #headline {
   font-size: 50px;
   color: #ffff66;
+  font-family: 'Nunito', sans-serif, serif;
 }
 
 #subhead {
-  align-items: left;
-  font-size: 15px;
+  align-items: left;
+  font-size: 20px;
+  padding-top: 5px;
+  letter-spacing: .5px;
+  line-height: 25px;
+  font-family: 'Nunito', sans-serif, serif;
+  padding-bottom: 0px;
 }
 
-#byline {}
+#byline {
+  font-family: 'Nunito', sans-serif, serif;
+}
 
 h1 {
   text-align: center;
@@ -170,7 +179,7 @@ select {
   left: -20px;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #bfbfbf;
 }
 
 /* On mouse-over, add a grey background color */
@@ -230,7 +239,17 @@ select {
   display: none;
   margin-bottom: 10px;
 }
+.h6{
 
+  padding: 2px;
+}
+.source{
+  padding-top: 10px
+  box-sizing: content-box;
+  width: 50%;
+  height: 50%;
+  border: 1px dashed black;
+}
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
@@ -253,5 +272,6 @@ select {
     text-align: left;
     padding: 20px;
   }
+
   /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
 }
