@@ -58,21 +58,24 @@ html, body {
 #subhead {
   align-items: left;
   font-size: 20px;
-  padding-top: 5px;
+  padding-top: 2px;
   letter-spacing: .5px;
   line-height: 25px;
   font-family: 'Nunito', sans-serif, serif;
   padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 #byline {
   font-family: 'Nunito', sans-serif, serif;
+
 }
 
 h1 {
   text-align: center;
   font-weight: 8800;
   font-size: 40px;
+  font-family: 'Nunito', sans-serif, serif;
 }
 
 /* Start your base/mobile styles here */
@@ -239,13 +242,18 @@ select {
   display: none;
   margin-bottom: 10px;
 }
-.h6{
-
-  padding: 2px;
+.cuffs{
+width:75px
+height: auto;
+align: center;
 }
-.source{
+
+h6{
+  padding: 2px;
+  margin: 2px;
+}
+.sources{
   padding-top: 10px
-  box-sizing: content-box;
   width: 50%;
   height: 50%;
   border: 1px dashed black;
