@@ -7,7 +7,6 @@ Sometimes, when we stretch out to larger screens, we need to make minor tweaks f
 You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
 */
 
-
 /* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
@@ -15,16 +14,16 @@ You will find this is far easier than the opposite task of using CSS to cram you
   box-sizing: border-box;
 }
 
-html, body{
+html, body {
   /* Sets default font-size to 16px, ensuring 1em = 16px; */
   font: helvetica;
   font-size: 16px;
   /* background-color: #D3D3D3; */
   overflow-x: hidden;
-    height: 100%;
+  height: 100%;
 }
 
-.hero-image{
+.hero-image {
   /* The image used */
   background-image: url('https://i.imgur.com/eC8HYh4.gif');
   display: block;
@@ -41,14 +40,14 @@ html, body{
 
 /* Place text in the middle of the image */
 
-.hero-text{
+.hero-text {
   text-align: center;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 h1 {
@@ -57,31 +56,30 @@ h1 {
   font-size: 40px;
 }
 
-
 /* Start your base/mobile styles here */
 
-html, header,body, p {
-    /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
-    align-items: center;
-    max-width: 720px;
-    text-align: left;
-    padding: 5px;
+html, header, body, p {
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 16px;
+  align-items: center;
+  max-width: 720px;
+  text-align: left;
+  padding: 5px;
 }
 
 .container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 5px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 5px;
 }
 
 .item {
-    width: 50%;
-    padding: 5px;
-    float: left;
-    min-height: 185px;
-    text-align: center;
-    display: none;
+  width: 50%;
+  padding: 5px;
+  float: left;
+  min-height: 185px;
+  text-align: center;
+  display: none;
 }
 
 .item.active {
@@ -89,38 +87,41 @@ html, header,body, p {
 }
 
 img {
-    display: block;
-    width: 100%;
-
+  display: block;
+  width: 100%;
 }
+
 figcaption {
   font-size: 12px;
 }
 
 button {
-    margin-left: 40px;
-    background-color: #404040; /* Grey */
-    border: none;
-    color: #ffff66; /*Wes Anderson Yellow*/
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: 'Nunito', sans-serif, serif;
+  margin-left: 40px;
+  background-color: #404040;
+  /* Grey */
+  border: none;
+  color: #ffff66;
+  /*Wes Anderson Yellow*/
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif, serif;
 }
+
 span {
   position: relative;
   font-size: 40px;
 }
 
-
-
 select {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
+
 /* Customize the label (the container) */
+
 .container {
   display: block;
   position: relative;
@@ -134,11 +135,12 @@ select {
   user-select: none;
 }
 
-.checkboxBox{
+.checkboxBox {
   margin-left: 35px;
 }
 
 /* Hide the browser's default checkbox */
+
 .container input {
   position: absolute;
   opacity: 0;
@@ -146,6 +148,7 @@ select {
 }
 
 /* Create a custom checkbox */
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -156,16 +159,19 @@ select {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+
+.container:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+
+.container input:checked~.checkmark {
   background-color: #2196F3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
   content: "";
   position: absolute;
@@ -173,11 +179,13 @@ select {
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+
+.container input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
+
 .container .checkmark:after {
   left: 9px;
   top: 5px;
@@ -190,49 +198,45 @@ select {
   transform: rotate(45deg);
 }
 
-.law{
+.law {
   display: none;
-
   /* OTHER STYLES HERE */
 }
 
-.law.active{
+.law.active {
   display: block;
 }
 
-.law{
-      width: 100%;
-      margin: 0 auto;
-      float: left;
-      min-height: 185px;
-      display: none;
-      margin-bottom: 10px;
-  }
+.law {
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+  min-height: 185px;
+  display: none;
+  margin-bottom: 10px;
+}
 
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
-    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-    .item {
-        width: 33%;
-        min-height: 310px;
-    }
-    select {
-        width: 33%;
-    }
+  /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+  .item {
+    width: 33%;
+    min-height: 310px;
+  }
+  select {
+    width: 33%;
+  }
 }
 
 @media(min-width: 729px) {
-  html, header,body, p {
-      /* Sets default font-size to 16px, ensuring 1em = 16px; */
-      font-size: 16px;
-      align-items: center;
-      max-width: 720px;
-      text-align: left;
-      padding: 20px;
-
-
+  html, header, body, p {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    align-items: center;
+    max-width: 720px;
+    text-align: left;
+    padding: 20px;
   }
-
   /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
 }
